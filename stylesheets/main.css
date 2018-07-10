@@ -33,3 +33,7 @@ body {
   color: #F4CD10;
   text-align: center;
 }
+
+#display {
+  align-content: center;
+}
