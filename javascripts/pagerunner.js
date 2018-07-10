@@ -24,6 +24,7 @@ var numOfSUP = 0;
 var numOfPP = 0;
 var numOfSQ = 0;
 
+// Resets variables for a new game
 function reset(){
   puCD = 0;
   puD = 0;
@@ -51,6 +52,28 @@ function reset(){
   numOfSQ = 0;
 }
 
+// Changes variables for calculation
+function ingame(){
+  document.getElementById("dinner").onclick(puCD += 1);
+
+  document.getElementById("death").onclick(puD += 1);
+  document.getElementById("roofcamp").onclick(cl += 1);
+  document.getElementById("bridgecamp").onclick(br += 1);
+  document.getElementById("bluezone").onclick(el += 1);
+
+  document.getElementById("redzone").onclick(su += 1);
+  document.getElementById("car").onclick(sup += 1);
+  document.getElementById("pan").onclick(pp += 1);
+  document.getElementById("hitreg").onclick(sq += 1);
+
+  document.getElementById("potato").onclick(te += 1);
+  document.getElementById("grenade").onclick(punch += 1);
+  document.getElementById("carflip").onclick(ep += 1);
+
+  document.getElementById("calculate").onclick(calculate());
+}
+
+// Calculation for workout
 function calculate(){
   numOfPUCD = puCD * 10;
   numOfPUD = puD * 3;
@@ -65,8 +88,11 @@ function calculate(){
   numOfPP = pp * 15;
   numOfSQ = sq * 5;
   totalPU = numOfPUCD + numOfPUD;
+  var array2parse = [numOfPUCD, numOfPUD, numOfTE, numOfPUNCH, numOfEP, numOfCL, numOfBR, numOfEL, numOfSU, numOfSUP, numOfPP, numOfSQ];
+  return parseCalc(array2parse);
 }
 
-function playDisplay(){
-  document.getElementById("display").innerHTML = <div class=row><div class=col><button class="btn btn-secondary"type=button id=dinner>CHICKEN DINNER</button></div></div><div class=row><div class=col-4><button class="btn btn-secondary"type=button id=death>Death</button></div><div class=col-4><button class="btn btn-secondary"type=button id=roofcamp>Roofcamp</button></div><div class=col-4><button class="btn btn-secondary"type=button id=bridgecamp>Bridgecamp</button></div><div class=col-4><button class="btn btn-secondary"type=button id=bluezone>Bluezone</button></div></div><div class=row><div class=col-4><button class="btn btn-secondary"type=button id=redzone>Redzone</button></div><div class=col-4><button class="btn btn-secondary"type=button id=car>Car</button></div><div class=col-4><button class="btn btn-secondary"type=button id=pan>Pan</button></div><div class=col-4><button class="btn btn-secondary"type=button id=hitreg>Hitreg Fail</button></div></div><div class=row><div class=col-3><button class="btn btn-secondary"type=button id=potato>Potato Aim</button></div><div class=col-3><button class="btn btn-secondary"type=button id=grenade>Grenade Thrown</button></div><div class=col-3><button class="btn btn-secondary"type=button id=carflip>Carflip</button></div></div><button class="btn btn-secondary"type=button>Calculate</button>;
+// Function to parse array from calc
+function parseCalc(array){
+
 }
