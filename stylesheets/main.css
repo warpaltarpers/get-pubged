@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Headliner No.45';
+  src: url('./fonts/headlinerno45.woff2') format('woff2'),
+       url('./fonts/headlinerno45.woff') format('woff'),
+       url('./fonts/headlinerno45.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(342deg, rgba(0,0,0,1) 0%, rgba(204,204,204,1) 100%);
+  background: -webkit-linear-gradient(342deg, rgba(0,0,0,1) 0%, rgba(204,204,204,1) 100%);
+  background: linear-gradient(342deg, rgba(0,0,0,1) 0%, rgba(204,204,204,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#cccccc",GradientType=1);
+}
+
+.title {
+  padding: 50px 50px 50px 50px;
+}
+
+.title h1 {
+  font-family: 'Headliner No.45', Helvetica, sans-serif;
+  font-size: 2.5em;
+  color: #F4CD10;
+  text-align: center;
+}

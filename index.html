@@ -2,9 +2,94 @@
   <html lang="en" dir="ltr">
     <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="X-UA-Compatible" content="chrome=1">
+      <meta name="description" content="Get a workout based on your game of PUBG">
       <title>Get PUBGed</title>
+
+      <link rel="stylesheet" href="./stylesheets/main.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
+      <div class="title">
+        <h1>Get PUBGed</h1>
+      </div>
 
+      <div class="application">
+        <script>
+          var puCD = 0; // pushups from chicken dinner
+          var puD = 0; // pushups from death
+          var te = 0; // tricep extensions
+          var punch = 0; // punches
+          var ep = 0; // elbow plank
+          var cl = 0; // climbers
+          var br = 0; // bridges
+          var el = 0; // elbow lifts
+          var su = 0; // situps
+          var sup = 0; // supermans
+          var pp = 0; // pseudo-planches
+          var sq = 0; // squats
+
+          var numOfPUCD = 0;
+          var numOfPUD = 0;
+          var numOfTE = 0;
+          var numOfPUNCH = 0;
+          var numOfEP = 0;
+          var numOfCL = 0;
+          var numOfBR = 0;
+          var numOfEL = 0;
+          var numOfSU = 0;
+          var numOfSUP = 0;
+          var numOfPP = 0;
+          var numOfSQ = 0;
+
+          function reset(){
+            puCD = 0;
+            puD = 0;
+            te = 0;
+            punch= 0;
+            ep = 0;
+            cl = 0;
+            br = 0;
+            el = 0;
+            su = 0;
+            sup = 0;
+            pp = 0;
+            sq = 0;
+            numOfPUCD = 0;
+            numOfPUD = 0;
+            numOfTE = 0;
+            numOfPUNCH = 0;
+            numOfEP = 0;
+            numOfCL = 0;
+            numOfBR = 0;
+            numOfEL = 0;
+            numOfSU = 0;
+            numOfSUP = 0;
+            numOfPP = 0;
+            numOfSQ = 0;
+          }
+
+          function calculate(){
+            numOfPUCD = puCD * 10;
+            numOfPUD = puD * 3;
+            numOfTE = te * 5;
+            numOfPUNCH = punch * 5;
+            numOfEP = ep * 30;
+            numOfCL = cl * 10;
+            numOfBR = br * 4;
+            numOfEL = el * 10;
+            numOfSU = su * 5;
+            numOfSUP = sup * 10;
+            numOfPP = pp * 15;
+            numOfSQ = sq * 5;
+            totalPU = numOfPUCD + numOfPUD;
+          }
+        </script>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
   </html>
