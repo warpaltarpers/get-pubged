@@ -66,3 +66,7 @@ function calculate(){
   numOfSQ = sq * 5;
   totalPU = numOfPUCD + numOfPUD;
 }
+
+function playDisplay(){
+  document.getElementById("display").innerHTML = <div class=row><div class=col><button class="btn btn-secondary"type=button id=dinner>CHICKEN DINNER</button></div></div><div class=row><div class=col-4><button class="btn btn-secondary"type=button id=death>Death</button></div><div class=col-4><button class="btn btn-secondary"type=button id=roofcamp>Roofcamp</button></div><div class=col-4><button class="btn btn-secondary"type=button id=bridgecamp>Bridgecamp</button></div><div class=col-4><button class="btn btn-secondary"type=button id=bluezone>Bluezone</button></div></div><div class=row><div class=col-4><button class="btn btn-secondary"type=button id=redzone>Redzone</button></div><div class=col-4><button class="btn btn-secondary"type=button id=car>Car</button></div><div class=col-4><button class="btn btn-secondary"type=button id=pan>Pan</button></div><div class=col-4><button class="btn btn-secondary"type=button id=hitreg>Hitreg Fail</button></div></div><div class=row><div class=col-3><button class="btn btn-secondary"type=button id=potato>Potato Aim</button></div><div class=col-3><button class="btn btn-secondary"type=button id=grenade>Grenade Thrown</button></div><div class=col-3><button class="btn btn-secondary"type=button id=carflip>Carflip</button></div></div><button class="btn btn-secondary"type=button>Calculate</button>;
+}
