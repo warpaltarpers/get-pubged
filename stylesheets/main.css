@@ -38,3 +38,16 @@ body {
   width: auto;
   display: inline-block;
 }
+
+#resDisplay .row {
+  margin: 10px 0px 10px 0px;
+  text-align: center;
+  width: inherit;
+  display: inline-block;
+}
+
+#reset {
+  text-align: center;
+  width: auto;
+  display: inline-block;
+}

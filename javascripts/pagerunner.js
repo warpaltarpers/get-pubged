@@ -50,6 +50,7 @@ function reset(){
   numOfSUP = 0;
   numOfPP = 0;
   numOfSQ = 0;
+  document.location.href = "./../index.html";
 }
 
 // Changes variables for calculation
@@ -69,8 +70,6 @@ document.getElementById("potato").onclick(te += 1);
 document.getElementById("grenade").onclick(punch += 1);
 document.getElementById("carflip").onclick(ep += 1);
 
-document.getElementById("calculate").onclick(calculate());
-
 // Calculation for workout
 function calculate(){
   numOfPUCD = puCD * 10;
@@ -88,7 +87,7 @@ function calculate(){
   totalPU = numOfPUCD + numOfPUD;
   // Array indices =    0        1         2          3        4       5         6        7        8         9        10
   var array2parse = [totalPU, numOfTE, numOfPUNCH, numOfEP, numOfCL, numOfBR, numOfEL, numOfSU, numOfSUP, numOfPP, numOfSQ];
-  return parseCalc(array2parse);
+  parseCalc(array2parse);
 }
 
 // Function to parse array from calc
@@ -144,7 +143,8 @@ function parseCalc(array){
           returnString = "ERROR. PLEASE CONTACT ADMINISTRATOR.";
       }
     }
-  }
+  } document.location.href = "./../results.html";
+  document.getElementById("resultsCont").innerHTML = returnString;
 }
 
 function getTime(seconds){
