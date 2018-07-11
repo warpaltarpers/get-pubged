@@ -15,10 +15,10 @@
         <h1>Get PUBGed</h1>
       </div>
 
-      <div class="container-fluid" id="display">
+      <div class="container" id="display">
         <div class="row">
           <div class="btn-group" role="dinner" aria-label="Chicken Dinner">
-            <div class="col"><button type="button" class="btn btn-success" id="dinner">CHICKEN DINNER</button></div>
+            <div class="col"><button type="button" class="btn btn-success" id="dinner" onclick="calculate()">CHICKEN DINNER</button></div>
           </div>
         </div>
         <div class="row">
@@ -30,23 +30,18 @@
         </div>
         <div class="row">
           <div class="btn-group" role="death1" aria-label="Death group 1">
-            <button type="button" class="btn btn-danger" id="death">Death</button>
-            <button type="button" class="btn btn-danger" id="roofcamp">Roofcamp</button>
-            <button type="button" class="btn btn-danger" id="bridgecamp">Bridgecamp</button>
-            <button type="button" class="btn btn-danger" id="bluezone">Bluezone</button>
+            <button type="button" class="btn btn-danger" id="death" onclick="calculate()">Death</button>
+            <button type="button" class="btn btn-danger" id="roofcamp" onclick="calculate()">Roofcamp</button>
+            <button type="button" class="btn btn-danger" id="bridgecamp" onclick="calculate()">Bridgecamp</button>
+            <button type="button" class="btn btn-danger" id="bluezone" onclick="calculate()">Bluezone</button>
           </div>
         </div>
         <div class="row">
           <div class="btn-group" role="death2" aria-label="Death group 2">
-            <button type="button" class="btn btn-danger" id="redzone">Redzone</button>
-            <button type="button" class="btn btn-danger" id="car">Car</button>
-            <button type="button" class="btn btn-danger" id="pan">Pan</button>
-            <button type="button" class="btn btn-danger" id="hitreg">Hitreg Fail</button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="btn-group" role="calculate" aria-label="Calculate">
-            <button type="button" class="btn btn-primary" id="calculate" onclick="calculate()">Calculate</button>
+            <button type="button" class="btn btn-danger" id="redzone" onclick="calculate()">Redzone</button>
+            <button type="button" class="btn btn-danger" id="car" onclick="calculate()">Car</button>
+            <button type="button" class="btn btn-danger" id="pan" onclick="calculate()">Pan</button>
+            <button type="button" class="btn btn-danger" id="hitreg" onclick="calculate()">Hitreg Fail</button>
           </div>
         </div>
       </div>
