@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Headliner No.45';
+  src: url('./fonts/headlinerno45.woff2') format('woff2'),
+       url('./fonts/headlinerno45.woff') format('woff'),
+       url('./fonts/headlinerno45.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #c6c6c6;
+}
+
+.jumbotron {
+  background-color: #0074d9;
+}
+
+.jumbotron {
+  padding: 50px 50px 50px 50px;
+}
+
+.jumbotron h1 {
+  font-family: 'Headliner No.45', Helvetica, sans-serif;
+  font-size: 3em;
+  color: #F4CD10;
+  text-align: center;
+}
+
+#display .row {
+  margin: 10px 0px 10px 0px;
+  text-align: center;
+  width: inherit;
+  display: inline-block;
+}
+
+#calculate {
+  text-align: center;
+  width: auto;
+  display: inline-block;
+}
+
+#resDisplay .row {
+  margin: 10px 0px 10px 0px;
+  text-align: center;
+  width: inherit;
+  display: inline-block;
+}
+
+#reset {
+  text-align: center;
+  width: auto;
+  display: inline-block;
+}
