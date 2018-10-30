@@ -85,7 +85,7 @@ function calculate(){
   numOfPP = pp * 15;
   numOfSQ = sq * 5;
   totalPU = numOfPUCD + numOfPUD;
-  // Array indices =    0        1         2          3        4       5         6        7        8         9        10
+  // Array indices =    0               1                     2                 3               4               5               6                7                8                 9             10
   var array2parse = [totalPU, numOfTE, numOfPUNCH, numOfEP, numOfCL, numOfBR, numOfEL, numOfSU, numOfSUP, numOfPP, numOfSQ];
   parseCalc(array2parse);
 }
