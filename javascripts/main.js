@@ -13,6 +13,8 @@ var exercises = {
     'squat' : 0
 };
 
+var eValues = Object.values(exercises);
+
 function btnpress(btn) {
     switch (btn) {
         case "dinner":
@@ -63,5 +65,18 @@ function btnpress(btn) {
             exercises.squat += 1;
             console.log("Button " + btn + " Pressed");
             break;
+    }
+}
+
+function calculate() {
+    let page = document.getElementById('display');
+    for (val in eValues) {
+        console.log(val); // Prints 0-11, no actual values
+    }
+}
+
+function reset() {
+    for (x in exercises) {
+        exercises.x = 0;
     }
 }
