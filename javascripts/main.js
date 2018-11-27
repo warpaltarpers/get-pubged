@@ -17,39 +17,51 @@ function btnpress(btn) {
     switch (btn) {
         case "dinner":
             exercises.pushupCD += 1;
+            console.log("Button " + btn + " Pressed");
             break;
         case "potato":
             exercises.tricepExtension += 1;
+            console.log("Button " + btn + " Pressed");
             break;
         case "grenade":
             exercises.punch += 1;
+            console.log("Button " + btn + " Pressed");
             break;
         case "carflip":
             exercises.elbowPlank += 1;
+            console.log("Button " + btn + " Pressed");
             break;
         case "death":
             exercises.pushupD += 1;
+            console.log("Button " + btn + " Pressed");
             break;
         case "roofcamp":
             exercises.climber += 1;
+            console.log("Button " + btn + " Pressed");
             break;
         case "bridgecamp":
             exercises.bridge += 1;
+            console.log("Button " + btn + " Pressed");
             break;
         case "bluezone":
             exercises.elbowLift += 1;
+            console.log("Button " + btn + " Pressed");
             break;
         case "redzone":
             exercises.situp += 1;
+            console.log("Button " + btn + " Pressed");
             break;
         case "car":
             exercises.superman += 1;
+            console.log("Button " + btn + " Pressed");
             break;
         case "pan":
             exercises.pseudoPlanche += 1;
+            console.log("Button " + btn + " Pressed");
             break;
         case "hitreg":
             exercises.squat += 1;
+            console.log("Button " + btn + " Pressed");
             break;
     }
 }
